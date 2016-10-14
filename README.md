@@ -7,6 +7,6 @@ Prerequisites:
 How to run tests:
 * open index.html page
 OR
-* npm run karma
-OR (in VS Code)
-* 
+* npm run test
+OR
+* run VS Code task named test
