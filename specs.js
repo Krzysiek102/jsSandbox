@@ -6,5 +6,3 @@ describe('javaScript', function () {
         expect(typeof bar === "object").toBeTruthy();
     });
 });
-
-
