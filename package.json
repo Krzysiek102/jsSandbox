@@ -1,0 +1,23 @@
+{
+  "name": "jssandbox",
+  "version": "1.0.0",
+  "description": "Sandbox project for playing with javaScript",
+  "main": "index.html",
+  "devDependencies": {
+    "bower": "^1.7.9",
+    "typings": "^1.4.0"
+  },  
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Krzysiek102/jsSandbox.git"
+  },
+  "author": "Krzysztof Kurek",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Krzysiek102/jsSandbox/issues"
+  },
+  "homepage": "https://github.com/Krzysiek102/jsSandbox#readme",
+  "scripts": {
+    "postinstall": "bower install && typings install"
+  }  
+}
