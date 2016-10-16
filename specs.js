@@ -1,3 +1,4 @@
+/// <reference path="typings/globals/jasmine/index.d.ts" />
 'use strict';
 
 describe('javaScript', function () {
@@ -13,7 +14,7 @@ describe('javaScript', function () {
                 add: add
             };
         }();
-        
+
         var calculator = new Calculator(2);
         var result = calculator.add(3);
         expect(result).toBe(5);
