@@ -1,8 +1,21 @@
 'use strict';
 
 describe('javaScript', function () {
-    it('temp', function () {
-        var bar = null;
-        expect(typeof bar === "object").toBeTruthy();
+    it('Revealing prototype pattern', function () {
+        var Calculator = function(seed){
+            this.seed = seed;
+        };
+        Calculator.prototype = function  (){
+            function add (item){
+                return this.seed + item;
+            };
+            return {
+                add: add
+            };
+        }();
+        
+        var calculator = new Calculator(2);
+        var result = calculator.add(3);
+        expect(result).toBe(5);
     });
 });
