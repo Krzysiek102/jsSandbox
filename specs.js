@@ -8,6 +8,9 @@ describe('javaScript', function () {
         };
         Calculator.prototype = function  (){
             function add (item){
+                return addInternally.call(this, item);
+            };
+            function addInternally(item){
                 return this.seed + item;
             };
             return {
