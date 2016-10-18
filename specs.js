@@ -22,4 +22,33 @@ describe('javaScript', function () {
         var result = calculator.add(3);
         expect(result).toBe(5);
     });
+    
+    it('classes', function() {
+        class User{
+            constructor(userName, email, password){
+                this.userName = userName;
+                this.email = email;
+                this.password = password;
+            }
+
+            static countUsers(){
+                console.log('There are 50 users');
+            }
+
+            register(){
+                console.log(this.userName + ' is now registered');
+            }
+        }
+
+        let bob = new User('Bob', 'bob@gmail.com', '123');
+        bob.register();
+        User.countUsers();
+
+        class Member extends User{
+            constructor(params) {
+                
+            }
+        }
+    });
+
 });
